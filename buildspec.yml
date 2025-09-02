@@ -8,7 +8,6 @@ phases:
       - REPOSITORY_URI=922265715057.dkr.ecr.ap-south-1.amazonaws.com/paranoidnex/python-app
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin $REPOSITORY_URI
       - IMAGE_TAG=latest
-      - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin $REPOSITORY_URI
 
   build:
     commands:
